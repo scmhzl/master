@@ -1,0 +1,463 @@
+input,textarea:focus{
+  outline: none;
+}
+a,a:hover{
+  text-decoration: none!important;
+}
+
+body{
+  font-size:14px;
+  font-family:"微软雅黑";
+  background: url(../img/body_bg.jpg);
+  background-size: cover;
+}
+body,html{
+  height:100%;
+  width:100%;
+  overflow-y: hidden;
+  margin:0;
+  padding:0;
+}
+#App{
+  width:90%;
+  height:100%;
+  margin:0 auto;
+}
+.ContentMain{
+  height:100%;
+  height:100%;
+  .mainBox{
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: space-between;
+    .leftContent{
+      width:20%;
+      height:100%;
+      margin-top:-3em;
+    }
+    .rightContent{
+      box-sizing: border-box;
+      height:100%;
+      width:75%;
+      >h3{
+        font-size:1.3em!important;
+        margin-bottom:0!important;
+        padding-bottom: .8em;
+      }
+      .div{
+        width:100%;
+        height:100%;
+        .upData{
+          box-sizing: border-box;
+          width:100%;
+          height:83%;
+          padding-right:3em;
+          overflow-y:scroll ;
+        }
+      }
+      .viewDiv{
+        width:100%;
+        height:100%;
+        .article_box{
+          box-sizing: border-box;
+          width:100%;
+          height:84%;
+          overflow-y:scroll ;
+        }
+      }
+    }
+  }
+}
+
+.scrollColor::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+    border-radius: 5px;
+  }
+.scrollColor::-webkit-scrollbar {
+    width: 5px;
+    background-color: #F5F5F5;
+  }
+.scrollColor::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-image: -webkit-gradient(linear,
+    left bottom,
+    left top,
+    color-stop(0.44, rgb(122,153,217)),
+    color-stop(0.72, rgb(73,125,189)),
+    color-stop(0.86, rgb(28,58,148)));
+  }
+
+.text-center{
+  text-align: center;
+}
+/*author*/
+.pre_author{
+  width:100%;
+  height:100%;
+  background: url(../img/zyPKJHayM9jRNxVMoDKv.jpg);
+  background-size: cover;
+  .pre_login{
+    padding:25vh 1em 0;
+    color:white;
+    .go{
+       width:1em;
+       margin:0 auto;
+      font-size:1.8em;
+    }
+    .to{
+      margin-top:1em;
+      font-size:1em;
+      text-align: right;
+    }
+    .button{
+      display: block;
+      margin:2.5em auto 0;
+      font-size:1.3em;
+      padding:.5em 1em;
+      border-radius: 5px;
+      border:none;
+      background:blue;
+      transition: .5s linear;
+      a{
+        color:white;
+      }
+      &:hover{
+        background: green;
+      }
+    }
+  }
+}
+
+.authorImg{
+  width:35%;
+  height:35%;
+  border-radius: 50%;
+  border:1px solid white;
+  margin:0 auto;
+  &:hover{
+    border-color:red;
+  }
+}
+.author_name{
+  font-size: 30px;
+}
+
+
+.author_content{
+  width:60%;
+  margin:0 auto;
+  display: flex;
+  justify-content: space-around;
+  a{
+    position: relative;
+    width:50px;
+    height:50px;
+    display: block;
+    color:#555;
+    b{
+      position: absolute;
+      top:0;
+      left:0;
+      width:100%;
+    }
+    span{
+      display: block;
+      width:100%;
+      bottom:0;
+      left:0;
+      position: absolute;
+    }
+  }
+}
+.loginAuthor{
+  margin-top:25vh;
+}
+
+//right content
+.article_author{
+  position: relative;
+  height:40px;
+  .authorImgRight{
+    position: absolute;
+    left:10px;
+    top:0;
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+  }
+  .article_authorInfo{
+    line-height: 40px;
+    position: absolute;
+    left:60px;
+    .article_authorA{
+      padding: 3px 10px;
+      border:1px solid red;
+      border-radius: 3px;
+      color:red;
+    }
+    .article_authorName{
+      color:skyblue;
+      margin:0 10px;
+    }
+    .article_time{
+      color:#555;
+    }
+  }
+}
+.article_ctr{
+  height:30px;
+  ul{
+    list-style: none;
+    li{
+      font-size: 12px;
+      line-height: 30px;
+      float: right;
+      margin-left:30px;
+      a{
+        color:#555;
+      }
+    }
+  }
+}
+.article_box{
+  margin-bottom:20px;
+  border-bottom:1px dashed #555;
+  padding:15px 20px;
+  a{
+    color:#76769a;
+  }
+  .title{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+.ArticleTitle{
+  display: block;
+  font-size: 1.2em;
+  margin:1em 50px 0 1em;
+}
+.articleMain{
+  text-indent: 2em;
+  line-height: 1.5em;
+  margin:10px 0;
+}
+.articleS{
+  margin-top:40px;
+  font-size: 20px;
+}
+
+//fixed
+
+
+.topNav{
+  height: 3em;
+  line-height: 3em;
+  padding-right:2em;
+  text-align: right;
+  .welcome{
+    margin-right:20px;
+  }
+  a{
+    color:black;
+    transition: .5s linear;
+    &:hover{
+      color:red;
+    }
+    .fa{
+      margin-right:5px;
+    }
+  }
+}
+
+#contentMain{
+  margin-top:50px;
+}
+
+//login
+.loginBox{
+  padding-top: 60px;
+  margin:0 auto;
+  .login_top{
+    margin:50px 0;
+    position: relative;
+    border-bottom:1px solid #250404;
+    height:1px ;
+    font-size: 20px;
+
+    div{
+      font-weight: bold;
+      position: inherit;
+      text-align: center;
+      top:-12px;
+      background: #F4E8D2;
+      width:120px;
+      margin:0 auto;
+    }
+  }
+}
+#logForm{
+  width:300px;
+  margin:0 auto;
+  .loginBtn{
+    width:100%;
+    background: blue;
+    transition: .5s linear;
+    text-align: center;
+    font-size: 18px;
+    color:white;
+    border:none;
+    padding:10px 0 ;
+    border-radius: 5px;
+    &:hover{
+      opacity: .6;
+    }
+  }
+  .login_bottom{
+    margin-top:20px;
+  }
+}
+
+
+.info{
+  height:20px;
+ text-align: right;
+  color:red;
+}
+.inpTex{
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  >input,>.File{
+    display: block;
+    border: 1px solid #cccccc;
+    width:260px;
+    margin-left:-2px;
+    text-indent: 15px;
+    border-radius: 0 3px 3px 0;
+  }
+  .labelText{
+    width:40px;
+    height:40px;
+    line-height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 3px 0 0 3px;
+  }
+  >.File{
+    position: relative;
+    font-size: 12px;
+    p{
+      position:absolute;
+      color:blue;
+      right:0;
+      bottom:0;
+      margin:0;
+    }
+    input{
+      margin-top:8px;
+    }
+  }
+}
+
+///\register
+#regForm{
+  width:300px;
+  margin:0 auto;
+  #regBtn{
+    width:100%;
+    background: green;
+    transition: .5s linear;
+    text-align: center;
+    font-size: 18px;
+    color:white;
+    border:none;
+    padding:10px 0 ;
+    border-radius: 5px;
+    &:hover{
+      opacity: .6;
+    }
+  }
+  .regText{
+    padding-top:10px;
+    a{
+      color: black;
+      font-weight: bold;
+    }
+  }
+}
+
+//textarea
+.textareaContent{
+  margin:50px auto 0;
+ .Content{
+   margin:0 50px;
+   .editorCon{
+     display: flex;
+     justify-content: space-between;
+     line-height: 1.5em;
+     input[type="text"]{
+       width:60%;
+       font-size: 18px;
+       font-weight:400;
+       border:none;
+     }
+     input[type="submit"],input[type="button"]{
+       background: green;
+       color: white;
+       text-align: center;
+       border:none;
+       margin-left:1em;
+       cursor: pointer;
+     }
+   }
+   textarea{
+     border:none;
+     margin:10px 0 ;
+     display: block;
+     max-width:100%;
+     min-width: 100%;
+     min-height: 50vh;
+   }
+ }
+  button{
+  float:right;
+    margin:2px 0;
+  }
+}
+.commentBox{
+  margin-right:120px;
+  position: relative;
+  padding-bottom:20px;
+  textarea{
+    border:none;
+    max-width: 100%;
+    min-width: 100%;
+  }
+  input{
+    position: absolute;
+    bottom:0;
+    right:0;
+
+  }
+}
+.commentAuthor{
+  margin-right:50px;
+  >div{
+    display: flex;
+    justify-content: space-between;
+    div{
+      width:70%;
+      b{
+        padding-right:20px;
+      }
+    }
+    a{
+      width:30%;
+      text-align: right;
+    }
+  }
+}
+
+
