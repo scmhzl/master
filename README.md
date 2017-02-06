@@ -23,3 +23,11 @@
   npm install -g supervisor
   supervisor --harmony app
   npm start
+  
+  
+ 未完善：
+ 1、调整样式
+ 2、添加评论回复功能
+ 3、添加上传头像功能
+ 4、router按需加载
+ 5、移动端
