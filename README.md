@@ -8,6 +8,7 @@
 文章喜欢以及评论；
 用户的登陆注册；
 
+
 主要技术：
 1、react技术，redux管理所有所有状态，react-router设置页面路由；
 2、express+mongolass进行后台数据的操作和管理；
